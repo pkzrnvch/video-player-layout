@@ -1,8 +1,13 @@
 # Video player
 
-[Here](https://pkzrnvch.github.io/video-player-layout/) is deployed a video player with custom layout based on [Playable](https://wix.github.io/playable/) library.
-It plays [this video](https://dvmn.org/media/filer_public/78/db/78db3456-3fd3-4504-9ed9-d2d1fd843c0b/highest_peak.mp4) for demonstration purposes.
+This project is a video player with custom layout including control buttons. It is built based on [this](https://github.com/devmanorg/video-player-jslib) JavaScript library.
+For demonstration purposes it plays [this](https://dvmn.org/media/filer_public/78/db/78db3456-3fd3-4504-9ed9-d2d1fd843c0b/highest_peak.mp4) video which is preset in code.
 
+### Preview
+
+This project is available for preview on [GitHub Pages](https://pkzrnvch.github.io/video-player-layout/).
+
+![screenshot](assets/screenshots/video_player_screenshot.png)
 
 ### Project Goals
 
