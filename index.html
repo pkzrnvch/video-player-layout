@@ -8,6 +8,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="assets/favicon/site.webmanifest">
   <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <script src="https://use.fontawesome.com/09424ece9f.js"></script>
@@ -30,6 +33,13 @@
     .player .progress-panel {
       flex-grow: 1;
       align-items: center;
+      display: flex;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+    }
+    .player .progress-bar {
+      flex-grow: 1;
+      align-items: center;
     }
     .player .control-button {
       border-style: none;
@@ -39,6 +49,7 @@
       font-size: 20px;
       height: 44px;
       width: 36px;
+      margin-right: 1px;
     }
   </style>
 </head>
@@ -50,10 +61,10 @@
       <button class="js-pause-button control-button"><i class="fa fa-pause" aria-hidden="true"></i></button>
       <button class="js-volume-button control-button"><i class="fa fa-volume-off" aria-hidden="true"></i></button>
       <button class="js-mute-button control-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
-      <div class="progress-panel" style="color: white;">
-        <span class="js-current-time"></span>
-        —
-        <span class="js-duration"></span>
+      <div class="progress-panel">
+        <div class="js-current-time"></div>
+        <div class="progress-bar"></div>
+        <div class="js-duration"></div>
       </div>
       <button class="js-fullscreen-button control-button"><i class="fa fa-expand" aria-hidden="true"></i></button>
     </div>
