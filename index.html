@@ -40,6 +40,10 @@
     .player .progress-bar {
       flex-grow: 1;
       align-items: center;
+      background-color: grey;
+    }
+    .player .progress-slider {
+      background-color: #f8104d;
     }
     .player .control-button {
       border-style: none;
@@ -63,7 +67,9 @@
       <button class="js-mute-button control-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
       <div class="progress-panel">
         <div class="js-current-time"></div>
-        <div class="progress-bar"></div>
+        <div class="js-progress progress-bar">
+          <div class="js-progress-slider progress-slider">Прогресс</div>
+        </div>
         <div class="js-duration"></div>
       </div>
       <button class="js-fullscreen-button control-button"><i class="fa fa-expand" aria-hidden="true"></i></button>
