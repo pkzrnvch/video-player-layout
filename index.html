@@ -32,18 +32,23 @@
     }
     .player .progress-panel {
       flex-grow: 1;
-      align-items: center;
       display: flex;
+      align-items: center;
       font-family: 'Roboto', sans-serif;
+      font-size: 16px;
       color: white;
     }
     .player .progress-bar {
       flex-grow: 1;
+      display: flex;
       align-items: center;
-      background-color: grey;
+      margin-right: 10px;
+      margin-left: 10px;
     }
     .player .progress-slider {
       background-color: #f8104d;
+      height: 5px;
+      border-radius: 2px;
     }
     .player .control-button {
       border-style: none;
@@ -68,7 +73,7 @@
       <div class="progress-panel">
         <div class="js-current-time"></div>
         <div class="js-progress progress-bar">
-          <div class="js-progress-slider progress-slider">Прогресс</div>
+          <div class="js-progress-slider progress-slider"></div>
         </div>
         <div class="js-duration"></div>
       </div>
