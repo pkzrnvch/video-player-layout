@@ -46,13 +46,14 @@
       align-items: center;
       margin-right: 10px;
       margin-left: 10px;
+      cursor: pointer;
     }
     .player .progress-slider {
       background-color: red;
       height: 5px;
       border-radius: 2px;
     }
-    .player .progress-slider-dot {
+    .player .progress-dot {
       height: 8px;
       width: 8px;
       margin-left: -8px;
@@ -60,6 +61,13 @@
       border-radius: 50%;
       border: 3px solid white;
       box-shadow: 0 0 4px 1px black;
+      opacity: 0;
+      transition-property: opacity;
+      transition: 300ms;
+      transition-timing-function: ease-out, ease-in
+    }
+    .player .progress-bar:hover .progress-dot {
+      opacity: 1;
     }
     .player .control-button {
       border-style: none;
@@ -85,7 +93,7 @@
         <div class="js-current-time"></div>
         <div class="js-progress progress-bar">
           <div class="js-progress-slider progress-slider"></div>
-          <div class="progress-slider-dot"></div>
+          <div class="progress-dot"></div>
         </div>
         <div class="js-duration"></div>
       </div>
