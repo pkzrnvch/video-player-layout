@@ -21,6 +21,7 @@
       box-shadow: 0 0 12px 6px rgba(0,0,0,0.6);
       display: flex;
       flex-direction: column;
+      background-color: black;
     }
     .player .video-container {
       flex-grow: 1;
@@ -37,6 +38,7 @@
       font-family: 'Roboto', sans-serif;
       font-size: 16px;
       color: white;
+      padding-top: 1px;
     }
     .player .progress-bar {
       flex-grow: 1;
@@ -46,9 +48,18 @@
       margin-left: 10px;
     }
     .player .progress-slider {
-      background-color: #f8104d;
+      background-color: red;
       height: 5px;
       border-radius: 2px;
+    }
+    .player .progress-slider-dot {
+      height: 8px;
+      width: 8px;
+      margin-left: -8px;
+      background-color: red;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 4px 1px black;
     }
     .player .control-button {
       border-style: none;
@@ -74,6 +85,7 @@
         <div class="js-current-time"></div>
         <div class="js-progress progress-bar">
           <div class="js-progress-slider progress-slider"></div>
+          <div class="progress-slider-dot"></div>
         </div>
         <div class="js-duration"></div>
       </div>
